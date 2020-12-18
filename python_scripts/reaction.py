@@ -28,6 +28,8 @@ async def on_raw_reaction_add(payload):
             role = discord.utils.get(guild.roles, name='movie_bois')
         elif payload.emoji.name == 'pjwinter_bois':
             role = discord.utils.get(guild.roles, name='pjwinter_bois')
+        elif payload.emoji.name == 'wow_bois':
+            role = discord.utils.get(guild.roles, name='wow_bois')
         else:
             role = discord.utils.get(guild.roles, name=payload.emoji.name)
 
@@ -57,6 +59,8 @@ async def on_raw_reaction_remove(payload):
             role = discord.utils.get(guild.roles, name='movie_bois')
         elif payload.emoji.name == 'pjwinter_bois':
             role = discord.utils.get(guild.roles, name='pjwinter_bois')
+        elif payload.emoji.name == 'wow_bois':
+            role = discord.utils.get(guild.roles, name='wow_bois')
         else:
             role = discord.utils.get(guild.roles, name=payload.emoji.name)
 

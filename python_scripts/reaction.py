@@ -4,7 +4,7 @@ import json
 intents = discord.Intents().all()
 client  = discord.Client(intents=intents)
 
-with open('bot_token/token.json') as json_file:
+with open('token.json') as json_file:
     token = json.load(json_file)
 
 @client.event
